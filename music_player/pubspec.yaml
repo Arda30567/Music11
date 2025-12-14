@@ -1,0 +1,133 @@
+name: music_player
+description: Ultra premium music player with advanced features and stunning UI
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core
+  cupertino_icons: ^1.0.6
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Audio
+  just_audio: ^0.9.36
+  audio_service: ^0.18.12
+  audio_session: ^0.1.18
+  
+  # UI & Animations
+  flutter_animate: ^4.4.0
+  rive: ^0.12.4
+  lottie: ^2.7.0
+  glassmorphism: ^3.0.0
+  
+  # Material Design
+  flex_color_scheme: ^7.3.1
+  
+  # Database
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  
+  # Network
+  dio: ^5.4.0
+  retrofit: ^4.0.3
+  
+  # Dependency Injection
+  get_it: ^7.6.4
+  
+  # JSON Serialization
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  
+  # Media
+  image_picker: ^1.0.5
+  cached_network_image: ^3.3.1
+  
+  # Utilities
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+  permission_handler: ^11.1.0
+  equatable: ^2.0.5
+  collection: ^1.18.0
+  
+  # Audio Effects
+  equalizer: ^3.0.0
+  
+  # Lyrics
+  lyrics_parser: ^1.0.0
+  
+  # Utilities
+  rxdart: ^0.27.7
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+  permission_handler: ^11.1.0
+  equatable: ^2.0.5
+  collection: ^1.18.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  retrofit_generator: ^8.0.6
+  isar_generator: ^3.1.0+1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Inter-Bold.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+
+flutter_native_splash:
+  color: "#1E1E1E"
+  image: assets/images/splash_logo.png
+  android: true
+  ios: true
+  web: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#1E1E1E"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
