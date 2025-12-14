@@ -63,9 +63,6 @@ dependencies:
   # Audio Effects
   equalizer: ^3.0.0
 
-  # Lyrics
-  lyrics_parser: ^1.0.0
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
